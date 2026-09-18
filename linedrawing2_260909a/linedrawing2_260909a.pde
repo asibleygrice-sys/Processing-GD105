@@ -1,3 +1,7 @@
+//Alex Sibley-Grice
+//9/18/26
+//GD105, Project 1, Shapes formed from 25 lines
+
 size(1000,1000);
 background(#ffffff);
 
