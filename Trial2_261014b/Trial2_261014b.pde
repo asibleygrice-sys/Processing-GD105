@@ -21,7 +21,7 @@ int FishCount = 0;
 rotate(TAU / -4);
 while(FishCount < 2){
   rotate(-TAU / 16);
-  image(Fish, width*.10, 0, Fish.width*FishScale, Fish.height*FishScale); 
+  image(Fish, width*.15, 0, Fish.width*FishScale, Fish.height*FishScale); 
   FishCount = FishCount + 1;
 }
 rotate(TAU / 4);
@@ -36,16 +36,6 @@ image(Moth, width*0, height*-.10, Moth.width*MothScale, Moth.height*MothScale);
 rotate(TAU / 40);
 rotate(TAU / 16);
 
-//The monster flies on the uneven wings of a bird
-float EagleScale = .20;
-int EagleCount = 0;
-while(EagleCount < 3){  
-  rotate(-TAU / 8);
-  image(Eagle, width*-.10, 0, Eagle.width*EagleScale, Eagle.height*EagleScale);
-  EagleCount = EagleCount + 1;
-}
-rotate(TAU * (3/8.0));
-
 //The monster has living centipedes for legs
 float CentipedeScale = .40;
 int CentipedeCount = 0;
@@ -57,6 +47,16 @@ while(CentipedeCount < 3){
   CentipedeCount = CentipedeCount + 1;
 }
 rotate(TAU * (-2/8.0));
+
+//The monster flies on the uneven wings of a bird
+float EagleScale = .20;
+int EagleCount = 0;
+while(EagleCount < 3){  
+  rotate(-TAU / 8);
+  image(Eagle, width*-.05, 0, Eagle.width*EagleScale, Eagle.height*EagleScale);
+  EagleCount = EagleCount + 1;
+}
+rotate(TAU * (3/8.0));
 
 //The monster's face is that of a Tarantula
 float SpiderScale = .15;
