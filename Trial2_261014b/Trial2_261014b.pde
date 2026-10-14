@@ -71,3 +71,5 @@ String Prefix = "Abominable";
 String CreatureName = "Tarimera";
 text(Prefix, width*.50, height*-.45);
 text(CreatureName, width*.50, height*-.35);
+
+save("output.png");
