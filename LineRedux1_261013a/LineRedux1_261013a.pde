@@ -5,8 +5,6 @@
 
 void setup(){
   size(750,750);
-  rectMode(CENTER);
-  frameRate(8);
 }
 
 void draw(){
@@ -25,6 +23,7 @@ void draw(){
   int squareCount = 0;
   while(squareCount < 8){  
     //Thin Black Line
+    stroke(#000000);
     strokeWeight(5);
     line(width*-.22, 0, width*-.10, 0);
     line(width* .22, 0, width* .10, 0);
@@ -40,7 +39,6 @@ void draw(){
     stroke(#ff0000);
     line(width*-.05, 0, width*.05, 0);
     
-    stroke(#000000);
     rotate(-TAU / 8);
     translate(width*.235, height*.235);
     rotate(TAU / 8);

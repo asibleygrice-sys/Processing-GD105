@@ -5,8 +5,6 @@
 
 void setup(){
   size(750,750);
-  rectMode(CENTER);
-  frameRate(8);
 }
 
 void draw(){
