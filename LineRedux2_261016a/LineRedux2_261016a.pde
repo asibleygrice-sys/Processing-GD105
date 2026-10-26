@@ -56,8 +56,7 @@ void draw(){
   //Save first 24 frames and pause animation after they finish
   if(frameCount < 25){
     saveFrame("frames/output_####.png");
-  }
-  if(frameCount == 24){
+  }else{
     noLoop();
   }
 }
